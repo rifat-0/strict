@@ -1,0 +1,352 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+
+/* all sectin heading*/
+.heading {
+	text-align: center;
+}
+.heading h2 {
+	font-size: 35px;
+	padding-bottom: 25px;
+	color: #2d3950;
+	font-weight: normal;
+}
+.heading p {
+	color: #999999;
+	padding-bottom: 70px;
+}
+/* all sectin heading*/
+
+/* header part start */
+header {
+	background-color: #f6f9f9;
+	padding: 20px 0;
+}
+.containar {
+	width: 1100px;
+	margin: 0px auto; 
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.logo {
+	max-width: 20%;
+	flex-basis: 20%;
+}
+.logo img {}
+nav {
+	max-width: 80%;
+	flex-basis: 80%;
+}
+nav ul {
+	justify-content: flex-end;
+}
+nav ul li {}
+nav ul li a {
+	color: #2d3950;
+	display: block;
+	padding: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+nav ul li a:hover {
+	background-color: #15a4fa;
+	color: #fff;
+}
+/* header part end */
+
+/* bennar part start */
+.bennar-section {
+	background: url(../images/bennar.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.bennar-content {
+	max-width: 50%;
+	flex-basis: 50%;
+	text-align: center;
+}
+.bennar-section .row {
+	justify-content: center;
+	min-height: 95vh;
+	align-items: center;
+}
+.bennar-content h1 {
+	font-size: 120px;
+	color: #fff;
+}
+.bennar-content span {
+	width: 100%;
+	height: 2px;
+	border: 1px solid #15a4fa;
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.bennar-content p {
+	color: #fff;
+	font-size: 16px;
+}
+.bennar-content button {
+	font-size: 16px;
+	color: #fff;
+	padding: 17px 40px;
+	background-color: transparent;
+	border: 1px solid #15a4fa;
+	margin-top: 25px;
+	border-radius: 5px;
+}
+
+.bennar-section i {
+	font-size: 25px;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	transform: translateX(-50%);
+}
+/* bennar part end */
+
+/* about part start */
+.about-section {
+	background-color: #f6f9f9;
+	padding-top: 50px;
+	text-align: center;
+}
+/* about part end */
+
+/* features part start */
+.features-section {
+	padding: 20px 0;
+}
+.features-box {
+	max-width: 33.33%;
+	flex-basis: 33.33%;
+	padding: 15px;
+	text-align: center;
+}
+.features-icon {
+	line-height: 6;
+	width: 80px;
+	height: 80px;
+	background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+50,5fc3ff+50 */
+	background: rgb(72,186,255); /* Old browsers */
+	background: -webkit-linear-gradient(left, rgba(72,186,255,1) 50%, rgba(95,195,255,1) 50%);
+	background: -o-linear-gradient(left, rgba(72,186,255,1) 50%, rgba(95,195,255,1) 50%);
+	background: linear-gradient(to right, rgba(72,186,255,1) 50%, rgba(95,195,255,1) 50%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+	margin: auto;
+
+}
+.features-icon i {
+	font-size: 35px;
+	color: #fff;
+}
+.features-box h3 {
+	font-size: 22px;
+	color: #2d3950;
+	font-weight: normal;
+	margin: 20px;
+}
+.features-box p {
+	font-size: 15px;
+	color: #999999;
+}
+/* features part end */
+
+/* Showcase part start */
+.showcase {
+	padding: 40px 0;
+	background-color: #f6f9f9;
+}
+.showcase-box {
+	max-width: 33.33%;
+	flex-basis: 33.33%;
+	padding: 10px;
+}
+.showcase-details {
+	position: relative;
+}
+.showcase-details img {}
+.showcase-details .overlay {
+	height: 0;
+	width: 100%;
+	position: absolute;
+	background-color: #15a4fad6;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.7s;
+}
+.showcase-details:hover .overlay {
+	opacity: 1;
+	height: 100%;
+}
+.showcase-details a.search {
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	color: #fff;
+	position: absolute;
+	display: block;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	top: 60%;
+	left: 40%;
+	transform: translate(-40%, -50%);
+	opacity: 0;
+	transition: all 0.7s;
+}
+.showcase-details:hover a.search {
+	opacity: 1;
+	top: 50%;
+}
+.showcase-details a.link {
+
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	color: #fff;
+	position: absolute;
+	display: block;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	top: 60%;
+	left: 55%;
+	transform: translate(-55%, -50%);
+	opacity: 0;
+	transition: all 0.7s;
+}
+.showcase-details:hover a.link {
+	opacity: 1;
+	top: 50%;
+}
+/* Showcase part end */
+
+/* contact part start */
+.contact-section {
+	padding: 40px 0;
+	background-image:url(../images/footer.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.contact-section .overlay {
+	background-color: rgb(45, 57, 80, 0.9);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+.contact-section .heading {
+	position: relative;
+}
+.contact-section .heading h2 {
+	color: #fff;
+}
+.contact-section .row {
+	justify-content: center;
+	position: relative;
+}
+.contact-form {
+	max-width: 40%;
+	flex-basis: 40%;
+	justify-content: center;
+}
+.contact-form form {
+	justify-content: center;
+	width: 100%;
+}
+.contact-form form input, .contact-form form textarea {
+	width: 100%;
+	color: #999;
+	padding: 15px;
+	margin-bottom: 10px;
+	border: 1px solid #999;
+	background-color: transparent;
+}
+.contact-form form ul {
+	align-items: center;
+}
+.contact-form form ul li {
+	max-width: 50%;
+	flex-basis: 50%;
+}
+.contact-form form ul li label {
+	font-size: 16px;
+	color: #fff;
+	text-transform: capitalize;
+	margin-left: 5px;
+}
+.contact-form form ul li input[type="checkbox"] {
+	width: auto;
+}
+.contact-form form ul li input[type="submit"] {
+	width: auto;
+	float: right;
+	border: 1px solid #15a4fa;
+	border-radius: 5px;
+	background-color: transparent;
+	padding: 13px 45px;
+	color: #fff;
+	font-size: 20px;
+}
+/* contact part end */
+
+/* footer part start */
+.footer-section {
+	padding: 30px;
+}
+.copyright {
+	max-width: 50%;
+	flex-basis: 50%;
+}
+.copyright p {
+	font-size: 16px;
+	color: #999;
+}
+.copyright p a {
+	color: #999;
+	font-size: 17px;
+}
+.social-icon {
+	max-width: 50%;
+	flex-basis: 50%;
+}
+.social-icon ul {
+	justify-content: flex-end;
+}
+.social-icon ul li {}
+.social-icon ul li a {
+	display: block;
+	padding: ;
+	height: 40px;
+	width: 40px;
+	background-color: #15a4fa;
+	color: #fff;
+	text-align: center;
+	border-radius: 4px;
+	margin-left: 5px;
+	line-height: 40px;
+}
+.cocial-icon ul li a:hover {}
+
+/* footer part end */
+
